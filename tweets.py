@@ -94,7 +94,7 @@ def _get_tweets(what, since, until, max_tweets, csv_file=None):
   tweets_df['Clean Text'] = tweets_df['Text'].apply(clean)
   tweets_df['Date'] = pd.to_datetime(tweets_df['Datetime']).dt.date
 
-  if file_loc = None:
+  if file_loc == None:
     return tweets_df[['Date','Clean Text']]
   else:
     return tweets_df[['Date','Clean Text']].to_csv(file_loc)
