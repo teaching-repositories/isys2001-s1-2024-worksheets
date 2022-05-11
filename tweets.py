@@ -49,8 +49,8 @@ def tweets_to_df(what, since='2022-01-01', until='2022-01-31', max_tweets = 500)
 
   Returns
   -------
-  Pandas Dataframe of date and tweet message.  The message has
-  be *cleaned* to remove emojis and non english letters.
+  Pandas Dataframe of date and the tweet message.  The message has
+  been *cleaned* to remove emojis and non english letters.
 
   '''
   return _get_tweets(what, since, until, max_tweets, csv_file=None)
@@ -77,9 +77,9 @@ def _get_tweets(what, since, until, max_tweets, csv_file=None):
 
   Returns
   -------
-  If no file name supplied then  returns a Pandas Dataframe
-  of date and tweet message.  The message has
-  be *cleaned* to remove emojis and non english letters.
+  If no file name supplied then returns a Pandas Dataframe
+  of date and the tweet message.  The message has
+  been *cleaned* to remove emojis and non english letters.
 
   '''
   # Using TwitterSearchScraper to scrape data and append tweets to list
