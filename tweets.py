@@ -53,7 +53,7 @@ def tweets_to_df(what, since='2022-01-01', until='2022-01-31', max_tweets = 500)
   be *cleaned* to remove emojis and non english letters.
 
   '''
-  return get_tweets(what, since, until, max_tweets, csv_file=None)
+  return _get_tweets(what, since, until, max_tweets, csv_file=None)
 
 
 
